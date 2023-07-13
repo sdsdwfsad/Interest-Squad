@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/bg_1"
+
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_list_main"
+        android:layout_width="match_parent"
+        android:layout_height="588dp"
+        android:paddingLeft="@dimen/activity_margin_10"
+        android:paddingTop="@dimen/activity_margin_5"
+        android:paddingRight="@dimen/activity_margin_10" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f5f5f5"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="0dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/myactivate1"
+                android:layout_width="107dp"
+                android:layout_height="45dp"
+
+                android:src="@mipmap/todolist" />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:paddingTop="5dp"
+                android:text="活动"
+                android:textColor="#d81e06"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="50dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/vi"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:onClick="vi"
+
+                android:src="@mipmap/ac1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="105dp"
+            android:layout_height="80dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="25dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/myactivate2"
+
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:onClick="my_message"
+                android:paddingTop="5dp"
+                android:src="@mipmap/usermes" />
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:paddingTop="5dp"
+                android:text="小队"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
